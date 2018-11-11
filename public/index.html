@@ -6,11 +6,17 @@
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <style type="text/css">
     
-        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+       /*@import url('https://fonts.googleapis.com/css?family=Amatic+SC');*/
+       @import url('https://fonts.googleapis.com/css?family=Orbitron');
         
         body {
             text-align:center;
-            font-family: 'Amatic SC', cursive;
+            /*font-family: 'Amatic SC', cursive;*/
+            font-family: 'Orbitron', sans-serif
+        }
+        
+        canvas {
+            box-shadow: 0 0 40px 20px #0ff;
         }
         
     </style>
@@ -34,8 +40,7 @@
                 default: 'arcade',
                 arcade: {
                     gravity: { y: 300 },
-                    debug: false,
-                    OVERLAP_BIAS: 300
+                    debug: false
                 }
             },
             scene: {
