@@ -10,9 +10,9 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 //});
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+    res.sendFile(path.join(__dirname + '/public/game.html'));
 });
 
 app.listen(process.env.PORT, () => {
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    console.log("Express server listening on port %d in %s mode", process.env.PORT, app.settings.env);
 });
